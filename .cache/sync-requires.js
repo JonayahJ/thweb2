@@ -1,0 +1,57 @@
+const { hot } = require("react-hot-loader/root")
+
+// prefer default export if available
+const preferDefault = m => (m && m.default) || m
+
+
+exports.components = {
+  "component---pages-404-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/404.js"))),
+  "component---pages-about-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/about.js"))),
+  "component---pages-about-side-cover-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/about-side-cover.js"))),
+  "component---pages-account-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/account.js"))),
+  "component---pages-agency-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/agency.js"))),
+  "component---pages-blog-article-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/blog-article.js"))),
+  "component---pages-blog-newsroom-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/blog-newsroom.js"))),
+  "component---pages-blog-reach-view-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/blog-reach-view.js"))),
+  "component---pages-blog-search-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/blog-search.js"))),
+  "component---pages-career-listing-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/career-listing.js"))),
+  "component---pages-career-listing-minimal-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/career-listing-minimal.js"))),
+  "component---pages-career-opening-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/career-opening.js"))),
+  "component---pages-cloud-hosting-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/cloud-hosting.js"))),
+  "component---pages-company-terms-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/company-terms.js"))),
+  "component---pages-contact-page-cover-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/contact-page-cover.js"))),
+  "component---pages-contact-page-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/contact-page.js"))),
+  "component---pages-contact-sidebar-map-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/contact-sidebar-map.js"))),
+  "component---pages-coworking-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/coworking.js"))),
+  "component---pages-design-company-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/design-company.js"))),
+  "component---pages-desktop-app-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/desktop-app.js"))),
+  "component---pages-documentation-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/documentation.js"))),
+  "component---pages-e-commerce-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/e-commerce.js"))),
+  "component---pages-e-learning-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/e-learning.js"))),
+  "component---pages-enterprise-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/enterprise.js"))),
+  "component---pages-expo-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/expo.js"))),
+  "component---pages-help-center-article-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/help-center-article.js"))),
+  "component---pages-help-center-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/help-center.js"))),
+  "component---pages-home-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/home.js"))),
+  "component---pages-index-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/index.js"))),
+  "component---pages-job-listing-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/job-listing.js"))),
+  "component---pages-logistics-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/logistics.js"))),
+  "component---pages-mobile-app-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/mobile-app.js"))),
+  "component---pages-not-found-cover-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/not-found-cover.js"))),
+  "component---pages-not-found-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/not-found.js"))),
+  "component---pages-password-reset-cover-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/password-reset-cover.js"))),
+  "component---pages-password-reset-simple-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/password-reset-simple.js"))),
+  "component---pages-portfolio-grid-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/portfolio-grid.js"))),
+  "component---pages-portfolio-masonry-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/portfolio-masonry.js"))),
+  "component---pages-portfolio-page-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/portfolio-page.js"))),
+  "component---pages-pricing-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/pricing.js"))),
+  "component---pages-rental-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/rental.js"))),
+  "component---pages-service-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/service.js"))),
+  "component---pages-signin-cover-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/signin-cover.js"))),
+  "component---pages-signin-simple-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/signin-simple.js"))),
+  "component---pages-signup-cover-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/signup-cover.js"))),
+  "component---pages-signup-simple-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/signup-simple.js"))),
+  "component---pages-startup-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/startup.js"))),
+  "component---pages-web-basic-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/web-basic.js")))
+}
+
