@@ -195,11 +195,11 @@ const Footer = props => {
             <List disablePadding>
               <ListItem disableGutters className={classes.logoContainerItem}>
                 <div className={classes.logoContainer}>
-                  <a href="/" title="thefront">
+                  <a href="/" title="Think Halcyon, LLC">
                     <Image
                       className={classes.logoImage}
                       src="https://assets.maccarianagency.com/the-front/logos/logo-negative.svg"
-                      alt="thefront"
+                      alt="Think Halcyon white logo"
                       lazy={false}
                     />
                   </a>

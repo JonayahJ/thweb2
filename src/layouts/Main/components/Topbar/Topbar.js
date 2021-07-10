@@ -85,11 +85,11 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.primary.dark,
   },
   logoContainer: {
-    width: 100,
-    height: 28,
+    width: 145,
+    height: 18,
     [theme.breakpoints.up('md')]: {
-      width: 120,
-      height: 32,
+      width: 175,
+      height: 22,
     },
   },
   logoImage: {
@@ -256,16 +256,19 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
   return (
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
       <div className={classes.logoContainer}>
-        <a href="/" title="thefront">
+        {/* LOGO */}
+        <a href="/" title="Think Halcyon">
           <Image
             className={classes.logoImage}
-            src={themeMode === 'light' ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg' : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'}
-            alt="thefront"
+            src={themeMode === 'light' ? 'https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625926494/Think%20Halcyon/ThinkHalcyonLogo_Black_openwg.png' : 'https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625926494/Think%20Halcyon/ThinkHalcyonLogo_White_fgfvim.png'}
+            alt="Think Halcyon"
             lazy={false}
           />
         </a>
       </div>
+
       <div className={classes.flexGrow} />
+      
       <Hidden smDown>
         <List disablePadding className={classes.navigationContainer}>
           {[landings, supportedPages, account].map((page, i) => (
@@ -314,18 +317,29 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
               </Popover>
             </div>
           ))}
+
+          {/* Portfolio */}
+          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+            <Typography
+              variant="body1"
+              color="textPrimary"
+              className={clsx(classes.listItemText, 'menu-item')}
+            >
+              <a 
+                href="/portfolio-masonry"
+                className={clsx(classes.listItemText, 'menu-item')}
+              >
+                Portfolio
+              </a>
+            </Typography>
+          </ListItem>
+
+          {/* Toggler */}
           <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
             <DarkModeToggler themeMode={themeMode} onClick={() => themeToggler()} />
           </ListItem>
-          {/* <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
-            <Button
-              variant="outlined"
-              component="a"
-              href="/documentation"
-            >
-              Documentation
-            </Button>
-          </ListItem> */}
+
+          {/* Button */}
           <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
             <Button
               variant="contained"
@@ -338,6 +352,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
               Book a Consultation
             </Button>
           </ListItem>
+
         </List>
       </Hidden>
       <Hidden mdUp>

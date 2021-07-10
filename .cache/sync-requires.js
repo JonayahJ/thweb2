@@ -5,6 +5,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/.cache/dev-404-page.js"))),
   "component---pages-404-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/404.js"))),
   "component---pages-about-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/about.js"))),
   "component---pages-about-side-cover-js": hot(preferDefault(require("/Users/jonayahj/Dev/thweb2/pages/about-side-cover.js"))),
