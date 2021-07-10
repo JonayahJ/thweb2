@@ -86,10 +86,10 @@ const useStyles = makeStyles(theme => ({
   },
   logoContainer: {
     width: 155,
-    height: 18,
+    height: 16,
     [theme.breakpoints.up('md')]: {
       width: 190,
-      height: 22,
+      height: 20,
     },
   },
   logoImage: {
@@ -130,9 +130,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
     setOpenedPopoverId(null);
   };
 
-  const landings = pages.landings;
   const aboutPages = pages.pages;
-  const account = pages.account;
 
   const MenuGroup = props => {
     const { item } = props;
@@ -165,21 +163,6 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
     );
   };
 
-  const LandingPages = () => {
-    const { services, apps, web } = landings.children;
-    return (
-      <div className={classes.menu}>
-        <div className={classes.menuItem}>
-          <MenuGroup item={services} />
-          <MenuGroup item={apps} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={web} />
-        </div>
-      </div>
-    );
-  };
-
   const AboutPages = () => {
     const {
       company,
@@ -195,34 +178,9 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
     );
   };
 
-  const AccountPages = () => {
-    const { settings, signup, signin, password, error } = account.children;
-    return (
-      <div className={classes.menu}>
-        <div className={classes.menuItem}>
-          <MenuGroup item={settings} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={signup} />
-          <MenuGroup item={signin} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={password} />
-          <MenuGroup item={error} />
-        </div>
-      </div>
-    );
-  };
-
   const renderPages = id => {
-    if (id === 'landing-pages') {
-      return <LandingPages />;
-    }
     if (id === 'supported-pages') {
       return <AboutPages />;
-    }
-    if (id === 'account') {
-      return <AccountPages />;
     }
   };
 
@@ -244,7 +202,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
       
       <Hidden smDown>
         <List disablePadding className={classes.navigationContainer}>
-          {[landings, aboutPages, account].map((page, i) => (
+          {[aboutPages].map((page, i) => (
             <div key={page.id}>
               <ListItem
                 aria-describedby={page.id}
@@ -291,6 +249,22 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
             </div>
           ))}
 
+          {/* Services */}
+          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+            <Typography
+              variant="body1"
+              color="textPrimary"
+              className={clsx(classes.listItemText, 'menu-item')}
+            >
+              <a 
+                href="/service"
+                className={clsx(classes.listItemText.navLink, 'menu-item')}
+              >
+                Services
+              </a>
+            </Typography>
+          </ListItem>
+
           {/* Portfolio */}
           <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
             <Typography
@@ -318,8 +292,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
               variant="contained"
               color="primary"
               component="a"
-              target="blank"
-              href="https://material-ui.com/store/items/the-front-landing-page/"
+              href="/"
               className={classes.listItemButton}
             >
               Book a Consultation

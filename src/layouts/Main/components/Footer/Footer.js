@@ -99,9 +99,7 @@ const Footer = props => {
 
   const classes = useStyles();
 
-  const landings = pages.landings;
   const aboutPages = pages.pages;
-  const account = pages.account;
 
   const MenuGroup = props => {
     const { item } = props;
@@ -128,48 +126,22 @@ const Footer = props => {
     );
   };
 
-  const LandingPages = () => {
-    const { services, apps, web } = landings.children;
-    return (
-      <div className={classes.menu}>
-        <div>
-          <MenuGroup item={services} />
-          <MenuGroup item={apps} />
-        </div>
-        <div>
-          <MenuGroup item={web} />
-        </div>
-      </div>
-    );
-  };
-
   const AboutPages = () => {
     const {
       company,
       contact,
+      legal
     } = aboutPages.children;
     return (
       <div className={classes.menu}>
         <div>
           <MenuGroup item={company} />
+        </div>
+        <div>
           <MenuGroup item={contact} />
         </div>
-      </div>
-    );
-  };
-
-  const AccountPages = () => {
-    const { settings, signup, signin, password, error } = account.children;
-    return (
-      <div className={classes.menu}>
         <div>
-          <MenuGroup item={settings} />
-          <MenuGroup item={signup} />
-        </div>
-        <div>
-          <MenuGroup item={signin} />
-          <MenuGroup item={password} />
-          <MenuGroup item={error} />
+          <MenuGroup item={legal} />
         </div>
       </div>
     );
@@ -212,13 +184,7 @@ const Footer = props => {
           <Grid item xs={12} md={10} className={classes.menuListContainer}>
             <Grid container spacing={0}>
               <Grid item>
-                <LandingPages />
-              </Grid>
-              <Grid item>
                 <AboutPages />
-              </Grid>
-              <Grid item>
-                <AccountPages />
               </Grid>
             </Grid>
           </Grid>

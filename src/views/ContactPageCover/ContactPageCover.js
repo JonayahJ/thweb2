@@ -86,7 +86,7 @@ const ContactPageCover = () => {
         <div className={classes.wrapper}>
           <div className={classes.cover}>
             <Image
-              src="https://assets.maccarianagency.com/the-front/photos/account/cover-4.jpg"
+              src="https://images.pexels.com/photos/5076528/pexels-photo-5076528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="Contact"
               className={classes.image}
               lazyProps={{ width: '100%' }}
@@ -94,8 +94,8 @@ const ContactPageCover = () => {
           </div>
           <div className={classes.content}>
             <SectionHeader
-              title="Contact us for anything"
-              subtitle="Our goal is to be as helpful as possible."
+              title="Have a question?"
+              subtitle="Send us a message!"
               data-aos="fade-up"
               align="center"
             />

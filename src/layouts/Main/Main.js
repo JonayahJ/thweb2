@@ -128,6 +128,24 @@ const Main = ({ children, themeToggler, themeMode }) => {
               title: 'Pricing',
               href: '/pricing',
             },
+          ],
+        },
+        contact: {
+          groupTitle: 'Contact Us',
+          pages: [
+            {
+              title: 'Contact',
+              href: '/contact-page-cover',
+            },
+            {
+              title: 'Book a Consultation',
+              href: '/contact-page',
+            },
+          ],
+        },
+        legal: {
+          groupTitle: 'Legal',
+          pages: [
             {
               title: 'Terms of Service',
               href: '/company-terms',
@@ -139,15 +157,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
             {
               title: 'Cookie Policy',
               href: '/company-terms',
-            },
-          ],
-        },
-        contact: {
-          groupTitle: 'Contact Us',
-          pages: [
-            {
-              title: 'Contact',
-              href: '/contact-page-cover',
             },
           ],
         },

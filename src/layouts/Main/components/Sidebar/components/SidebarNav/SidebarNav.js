@@ -57,9 +57,7 @@ const SidebarNav = props => {
   const { pages, onClose, className, ...rest } = props;
   const classes = useStyles();
 
-  const landings = pages.landings;
-  const supportedPages = pages.pages;
-  const account = pages.account;
+  const aboutPages = pages.pages;
 
   const MenuGroup = props => {
     const { item } = props;
@@ -92,58 +90,18 @@ const SidebarNav = props => {
     );
   };
 
-  const LandingPages = () => {
-    const { services, apps, web } = landings.children;
-    return (
-      <div className={classes.menu}>
-        <div className={classes.menuItem}>
-          <MenuGroup item={services} />
-          <MenuGroup item={apps} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={web} />
-        </div>
-      </div>
-    );
-  };
-
-  const SupportedPages = () => {
+  const AboutPages = () => {
     const {
-      career,
-      helpCenter,
       company,
       contact,
-      blog,
-      portfolio,
-    } = supportedPages.children;
+    } = aboutPages.children;
     return (
       <div className={classes.menu}>
         <div className={classes.menuItem}>
-          <MenuGroup item={career} />
-          <MenuGroup item={helpCenter} />
           <MenuGroup item={company} />
         </div>
         <div className={classes.menuItem}>
           <MenuGroup item={contact} />
-          <MenuGroup item={blog} />
-          <MenuGroup item={portfolio} />
-        </div>
-      </div>
-    );
-  };
-
-  const AccountPages = () => {
-    const { settings, signup, signin, password, error } = account.children;
-    return (
-      <div className={classes.menu}>
-        <div className={classes.menuItem}>
-          <MenuGroup item={settings} />
-          <MenuGroup item={signup} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={signin} />
-          <MenuGroup item={password} />
-          <MenuGroup item={error} />
         </div>
       </div>
     );
@@ -157,38 +115,19 @@ const SidebarNav = props => {
         </ListItemIcon>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Typography variant="h6" color="textPrimary" gutterBottom>
-          Landings
-        </Typography>
-        <LandingPages />
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Divider className={classes.divider} />
       </ListItem>
+      {/* About Dropdown */}
       <ListItem className={classes.listItem}>
         <Typography variant="h6" color="textPrimary" gutterBottom>
-          Pages
+          About
         </Typography>
-        <SupportedPages />
+        <AboutPages />
       </ListItem>
+      {/* Services */}
+      {/* Portfolio */}
       <ListItem className={classes.listItem}>
         <Divider className={classes.divider} />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Typography variant="h6" color="textPrimary" gutterBottom>
-          Account
-        </Typography>
-        <AccountPages />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          variant="outlined"
-          fullWidth
-          component="a"
-          href="/documentation"
-        >
-          Documentation
-        </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
@@ -196,10 +135,9 @@ const SidebarNav = props => {
           color="primary"
           fullWidth
           component="a"
-          target="blank"
-          href="https://material-ui.com/store/items/the-front-landing-page/"
+          href="/contact-page"
         >
-          Buy Now
+          Book a Consultation
         </Button>
       </ListItem>
     </List>

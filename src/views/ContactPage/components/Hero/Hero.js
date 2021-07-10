@@ -10,14 +10,23 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     height: '100%',
     position: 'relative',
-    background: `url(https://assets.maccarianagency.com/the-front/illustrations/contact-cover.svg) no-repeat #3F50B5`,
+    background: `url(https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625933366/Think%20Halcyon/Illustrations/Personal_Information--Yellow-400_wp5tdd.svg) no-repeat #3F50B5`,
     overflow: 'hidden',
     minHeight: 400,
+    [theme.breakpoints.up('xs')]: {
+      backgroundPosition: 'right 10px top',
+    },
+    [theme.breakpoints.up('sm')]: {
+      backgroundPosition: 'right 50px top',
+    },
     [theme.breakpoints.up('md')]: {
-      backgroundPosition: 'right -400px top',
+      backgroundPosition: 'right 75px top',
     },
     [theme.breakpoints.up('lg')]: {
-      backgroundPosition: 'right -250px top',
+      backgroundPosition: 'right 150px top',
+    },
+    [theme.breakpoints.up('xl')]: {
+      backgroundPosition: 'right 350px top',
     },
   },
   textWhite: {
@@ -48,8 +57,8 @@ const Hero = props => {
     <div className={clsx(classes.root, className)} {...rest}>
       <Section className={classes.section}>
         <SectionHeader
-          title="Contact us"
-          subtitle="We are founded by a leading academic and researcher in the field of Industrial Systems Engineering."
+          title="Book a free 30-minute consultation"
+          subtitle="Are you ready to build your first new website or redesign an old one? Let's chat about your needs and how Think Halcyon can help you."
           align="left"
           data-aos="fade-up"
           disableGutter
