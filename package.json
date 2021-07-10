@@ -45,6 +45,7 @@
     "prop-types": "^15.7.2",
     "query-string": "^6.13.7",
     "react": "^16.13.1",
+    "react-calendly": "^2.2.0",
     "react-countup": "^4.3.3",
     "react-dom": "^16.8.6",
     "react-helmet": "^6.1.0",

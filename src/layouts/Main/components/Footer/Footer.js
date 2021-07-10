@@ -100,7 +100,7 @@ const Footer = props => {
   const classes = useStyles();
 
   const landings = pages.landings;
-  const supportedPages = pages.pages;
+  const aboutPages = pages.pages;
   const account = pages.account;
 
   const MenuGroup = props => {
@@ -143,28 +143,16 @@ const Footer = props => {
     );
   };
 
-  const SupportedPages = () => {
+  const AboutPages = () => {
     const {
-      career,
-      helpCenter,
       company,
       contact,
-      blog,
-      portfolio,
-    } = supportedPages.children;
+    } = aboutPages.children;
     return (
       <div className={classes.menu}>
         <div>
-          <MenuGroup item={career} />
-          <MenuGroup item={helpCenter} />
-        </div>
-        <div>
           <MenuGroup item={company} />
           <MenuGroup item={contact} />
-        </div>
-        <div>
-          <MenuGroup item={blog} />
-          <MenuGroup item={portfolio} />
         </div>
       </div>
     );
@@ -227,7 +215,7 @@ const Footer = props => {
                 <LandingPages />
               </Grid>
               <Grid item>
-                <SupportedPages />
+                <AboutPages />
               </Grid>
               <Grid item>
                 <AccountPages />

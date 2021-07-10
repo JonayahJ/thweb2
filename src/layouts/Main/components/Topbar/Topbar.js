@@ -85,10 +85,10 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.primary.dark,
   },
   logoContainer: {
-    width: 145,
+    width: 155,
     height: 18,
     [theme.breakpoints.up('md')]: {
-      width: 175,
+      width: 190,
       height: 22,
     },
   },
@@ -131,9 +131,8 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
   };
 
   const landings = pages.landings;
-  const supportedPages = pages.pages;
+  const aboutPages = pages.pages;
   const account = pages.account;
-  // const about = pages.about;
 
   const MenuGroup = props => {
     const { item } = props;
@@ -166,20 +165,6 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
     );
   };
 
-  // const AboutPages = () => {
-  //   const { aboutJo, aboutTH, faq } = about.children;
-  //   return (
-  //     <div className={classes.menu}>
-  //       <div className={classes.menuItem}>
-  //         <MenuGroup item={services} />
-  //         <MenuGroup item={apps} />
-  //       </div>
-  //       <div className={classes.menuItem}>
-  //         <MenuGroup item={web} />
-  //       </div>
-  //     </div>
-  //   );
-  // };
   const LandingPages = () => {
     const { services, apps, web } = landings.children;
     return (
@@ -195,28 +180,16 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
     );
   };
 
-  const SupportedPages = () => {
+  const AboutPages = () => {
     const {
-      career,
-      helpCenter,
       company,
       contact,
-      blog,
-      portfolio,
-    } = supportedPages.children;
+    } = aboutPages.children;
     return (
       <div className={classes.menu}>
         <div className={classes.menuItem}>
-          <MenuGroup item={career} />
-          <MenuGroup item={helpCenter} />
-        </div>
-        <div className={classes.menuItem}>
           <MenuGroup item={company} />
           <MenuGroup item={contact} />
-        </div>
-        <div className={classes.menuItem}>
-          <MenuGroup item={blog} />
-          <MenuGroup item={portfolio} />
         </div>
       </div>
     );
@@ -246,7 +219,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
       return <LandingPages />;
     }
     if (id === 'supported-pages') {
-      return <SupportedPages />;
+      return <AboutPages />;
     }
     if (id === 'account') {
       return <AccountPages />;
@@ -271,7 +244,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
       
       <Hidden smDown>
         <List disablePadding className={classes.navigationContainer}>
-          {[landings, supportedPages, account].map((page, i) => (
+          {[landings, aboutPages, account].map((page, i) => (
             <div key={page.id}>
               <ListItem
                 aria-describedby={page.id}
@@ -327,7 +300,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
             >
               <a 
                 href="/portfolio-masonry"
-                className={clsx(classes.listItemText, 'menu-item')}
+                className={clsx(classes.listItemText.navLink, 'menu-item')}
               >
                 Portfolio
               </a>

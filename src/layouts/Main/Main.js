@@ -114,116 +114,40 @@ const Main = ({ children, themeToggler, themeMode }) => {
       },
     },
     pages: {
-      title: 'Pages',
+      title: 'About',
       id: 'supported-pages',
       children: {
-        career: {
-          groupTitle: 'Career',
-          pages: [
-            {
-              title: 'Lising',
-              href: '/career-listing',
-            },
-            {
-              title: 'Lising Minimal',
-              href: '/career-listing-minimal',
-            },
-            {
-              title: 'Opening',
-              href: '/career-opening',
-            },
-          ],
-        },
-        helpCenter: {
-          groupTitle: 'Help center',
-          pages: [
-            {
-              title: 'Overview',
-              href: '/help-center',
-            },
-            {
-              title: 'Article',
-              href: '/help-center-article',
-            },
-          ],
-        },
         company: {
-          groupTitle: 'Company',
+          groupTitle: 'Learn More',
           pages: [
             {
               title: 'About',
               href: '/about',
             },
             {
-              title: 'About (Cover)',
-              href: '/about-side-cover',
-            },
-            {
               title: 'Pricing',
               href: '/pricing',
             },
             {
-              title: 'Terms',
+              title: 'Terms of Service',
+              href: '/company-terms',
+            },
+            {
+              title: 'Privacy Policy',
+              href: '/company-terms',
+            },
+            {
+              title: 'Cookie Policy',
               href: '/company-terms',
             },
           ],
         },
         contact: {
-          groupTitle: 'Contact',
+          groupTitle: 'Contact Us',
           pages: [
             {
-              title: 'Reach View',
-              href: '/contact-page',
-            },
-            {
-              title: 'Sidebar Map',
-              href: '/contact-sidebar-map',
-            },
-            {
-              title: 'Cover',
+              title: 'Contact',
               href: '/contact-page-cover',
-            },
-          ],
-        },
-        blog: {
-          groupTitle: 'Blog',
-          pages: [
-            {
-              title: 'Newsroom',
-              href: '/blog-newsroom',
-            },
-            {
-              title: 'Reach View',
-              href: '/blog-reach-view',
-            },
-            {
-              title: 'Search',
-              href: '/blog-search',
-            },
-            {
-              title: 'Article',
-              href: '/blog-article',
-            },
-          ],
-        },
-        portfolio: {
-          groupTitle: 'Portfolio',
-          pages: [
-            {
-              title: 'Basic',
-              href: '/portfolio-page',
-            },
-            {
-              title: 'Masonry',
-              href: '/portfolio-masonry',
-            },
-            {
-              title: 'Grid View',
-              href: '/portfolio-grid',
-            },
-            {
-              title: 'Parallax Effect',
-              href: '/agency',
             },
           ],
         },
