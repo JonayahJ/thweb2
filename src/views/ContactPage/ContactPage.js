@@ -8,7 +8,7 @@ const ContactPage = () => (
   <div>
     <Hero />
     <Section>
-      <InlineWidget url="https://calendly.com/jonayah/consultation" />
+      <InlineWidget url="https://calendly.com/thinkhalcyon/consultation" />
     </Section>
     <Divider />
   </div>

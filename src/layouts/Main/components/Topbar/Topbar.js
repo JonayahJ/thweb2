@@ -191,7 +191,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
         <a href="/" title="Think Halcyon">
           <Image
             className={classes.logoImage}
-            src={themeMode === 'light' ? 'https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625926494/Think%20Halcyon/ThinkHalcyonLogo_Black_openwg.png' : 'https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625926494/Think%20Halcyon/ThinkHalcyonLogo_White_fgfvim.png'}
+            src={themeMode === 'light' ? 'https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625926494/Think%20Halcyon/Logos/ThinkHalcyonLogo_Black_openwg.png' : 'https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625926494/Think%20Halcyon/Logos/ThinkHalcyonLogo_White_fgfvim.png'}
             alt="Think Halcyon"
             lazy={false}
           />
@@ -292,7 +292,8 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
               variant="contained"
               color="primary"
               component="a"
-              href="/"
+              // NEED TO CHANGE THE LINK
+              href="/contact-page"
               className={classes.listItemButton}
             >
               Book a Consultation

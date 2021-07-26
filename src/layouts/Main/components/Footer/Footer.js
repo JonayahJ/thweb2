@@ -37,8 +37,8 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 0,
   },
   logoContainer: {
-    width: 120,
-    height: 32,
+    width: 190,
+    height: 20,
   },
   logoImage: {
     width: '100%',
@@ -158,7 +158,7 @@ const Footer = props => {
                   <a href="/" title="Think Halcyon, LLC">
                     <Image
                       className={classes.logoImage}
-                      src="https://assets.maccarianagency.com/the-front/logos/logo-negative.svg"
+                      src="https://res.cloudinary.com/think-halcyon-llc/image/upload/v1625926494/Think%20Halcyon/Logos/ThinkHalcyonLogo_White_fgfvim.png"
                       alt="Think Halcyon white logo"
                       lazy={false}
                     />
