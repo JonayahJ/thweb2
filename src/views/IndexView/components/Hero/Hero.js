@@ -74,7 +74,7 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
 
   const title = (
     <Typography variant="h2" component="span" className={classes.fontWeight900}>
-      A modern design system for your new
+      A beautiful and functional design for your
       <br />
       <TypedText
         component="span"
@@ -83,13 +83,14 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
         className={classes.fontWeight900}
         typedProps={{
           strings: [
-            'e-commerce',
-            'expo',
-            'startup',
-            'online course',
-            'coworking space',
-            'job listing',
-            'and many more...',
+            'online store',
+            'consultancy',
+            'portfolio',
+            'course',
+            'blog',
+            'custom branding',
+            'medical practice',
+            'next big idea',
           ],
           typeSpeed: 50,
           loop: true,
@@ -98,11 +99,11 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
     </Typography>
   );
 
-  const subtitle = 'TheFront will make your product look modern and professional while saving you precious time.';
+  const subtitle = 'Think Halcyon will handle your design needs while you focus on running your business.';
 
   const docsButton = (
-    <Button size="large" variant="outlined" color="primary" component="a" href="/documentation">
-      Documentation
+    <Button size="large" variant="outlined" color="primary" component="a" href="/portfolio">
+      Previous Projects
     </Button>
   );
 
@@ -112,7 +113,7 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
       variant="contained"
       color="primary"
       component="a"
-      href="/home"
+      href="/contact-page"
     >
       Get started
     </Button>

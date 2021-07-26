@@ -32,7 +32,7 @@ const Contact = props => {
           <div>
             <SectionHeader
               title="Contact us"
-              subtitle="Keep track of what's happening with your data, change permissions, and run reports against your data anywhere in the world. Keep track of what's happening with your data, change permissions."
+              subtitle="Want to know more about the services that we offer?  Interested in hiring us for your website or graphic design needs?  Need to send us some paperwork?  Contact us at the details below."
               subtitleProps={{
                 variant: 'body1',
                 color: 'textPrimary',
@@ -41,14 +41,14 @@ const Contact = props => {
               align="left"
             />
             <List disablePadding>
-              <ListItem disableGutters data-aos="fade-up">
+              {/* <ListItem disableGutters data-aos="fade-up">
                 <ListItemAvatar>
                   <Avatar
                     src="https://assets.maccarianagency.com/the-front/illustrations/contact-icon-phone.png"
                     srcSet="https://assets.maccarianagency.com/the-front/illustrations/contact-icon-phone@2x.png 2x"
                     className={classes.icon}
                   />
-                </ListItemAvatar>
+                </ListItemAvatar> 
                 <ListItemText
                   primary="Text number"
                   secondary="+1 (347) 423-1856"
@@ -61,7 +61,7 @@ const Contact = props => {
                     color: 'textPrimary',
                   }}
                 />
-              </ListItem>
+              </ListItem> */}
               <ListItem disableGutters data-aos="fade-up">
                 <ListItemAvatar>
                   <Avatar

@@ -51,7 +51,7 @@ const Map = props => {
   return (
     <ReactMap
       zoom={zoom}
-      center={center}
+      center={[40.68960099405133, -73.90626218811926]}
       className={clsx('map', classes.root, className)}
       {...rest}
     >
@@ -75,7 +75,7 @@ const Map = props => {
 };
 
 Map.defaultProps = {
-  zoom: 10,
+  zoom: 11,
   center: [0, 0],
 };
 
